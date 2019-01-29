@@ -4,6 +4,8 @@
   "description": "an eslint rule plugin companion to babel-eslint",
   "main": "index.js",
   "scripts": {
+    "checkFormat": "prettier --list-different '**/*.{js,jsx,ts,tsx,html,vue,css,less,scss,graphql,yaml,yml,json,md,mdx}' ",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,html,vue,css,less,scss,graphql,yaml,yml,json,md,mdx}' ",
     "test": "mocha ./tests/rules/*.js"
   },
   "repository": {
@@ -35,7 +37,20 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.1",
     "lodash.clonedeep": "^4.5.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "prettier": "^1.16.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --list-different"
+    ]
   }
 }
