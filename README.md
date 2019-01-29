@@ -16,9 +16,7 @@ Load the plugin in your `.eslintrc` file:
 
 ```json
 {
-  "plugins": [
-    "babel"
-  ]
+  "plugins": ["babel"]
 }
 ```
 
@@ -39,6 +37,7 @@ original ones as well!).
   }
 }
 ```
+
 ### Rules
 
 Each rule corresponds to a core `eslint` rule, and has the same options.
@@ -56,12 +55,12 @@ Each rule corresponds to a core `eslint` rule, and has the same options.
 
 #### Deprecated
 
-| Rule                             | Notes                              |
-|:---------------------------------|:-----------------------------------|
-| `babel/generator-star-spacing`   | Use [`generator-star-spacing`](http://eslint.org/docs/rules/generator-star-spacing) since eslint@3.6.0 |
-| `babel/object-shorthand`         | Use [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand) since eslint@0.20.0 |
-| `babel/arrow-parens`             | Use [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens) since eslint@3.10.0 |
-| `babel/func-params-comma-dangle` | Use [`comma-dangle`](http://eslint.org/docs/rules/comma-dangle) since eslint@3.8.0 |
-| `babel/array-bracket-spacing`    | Use [`array-bracket-spacing`](http://eslint.org/docs/rules/array-bracket-spacing) since eslint@3.9.0 |
+| Rule                             | Notes                                                                                                                                                                          |
+| :------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `babel/generator-star-spacing`   | Use [`generator-star-spacing`](http://eslint.org/docs/rules/generator-star-spacing) since eslint@3.6.0                                                                         |
+| `babel/object-shorthand`         | Use [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand) since eslint@0.20.0                                                                                    |
+| `babel/arrow-parens`             | Use [`arrow-parens`](http://eslint.org/docs/rules/arrow-parens) since eslint@3.10.0                                                                                            |
+| `babel/func-params-comma-dangle` | Use [`comma-dangle`](http://eslint.org/docs/rules/comma-dangle) since eslint@3.8.0                                                                                             |
+| `babel/array-bracket-spacing`    | Use [`array-bracket-spacing`](http://eslint.org/docs/rules/array-bracket-spacing) since eslint@3.9.0                                                                           |
 | `babel/flow-object-type`         | Use [`flowtype/object-type-delimiter`](https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-object-type-delimiter) since eslint-plugin-flowtype@2.23.0 |
-| `babel/no-await-in-loop`         | Use [`no-await-in-loop`](http://eslint.org/docs/rules/no-await-in-loop) since eslint@3.12.0 |
+| `babel/no-await-in-loop`         | Use [`no-await-in-loop`](http://eslint.org/docs/rules/no-await-in-loop) since eslint@3.12.0                                                                                    |
